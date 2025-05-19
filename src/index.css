@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+:root {
+  --accent-500: rgb(139 92 246);  /* lighter purple */
+  --accent-600: rgb(124 58 237);  /* darker purple */
+  --textOnAccent-primary: #ffffff;
+}
+
+.bg-accent-500 {
+  background-color: var(--accent-500);
+}
+.hover\:bg-accent-600:hover {
+  background-color: var(--accent-600);
+}
+
+.border-accent-600 {
+  border-color: var(--accent-600);
+}
+.text-textOnAccent-primary {
+  color: var(--textOnAccent-primary);
+}
