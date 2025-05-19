@@ -13,8 +13,9 @@
 }
 
 .animate-scroll {
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
 }
+
 :root {
   --accent-500: rgb(139 92 246);  /* lighter purple */
   --accent-600: rgb(124 58 237);  /* darker purple */
